@@ -1,7 +1,19 @@
-print("송시온 바보")
-print("인정하시나여??")
-answer = input()
-if answer == "네":
-    print("인정하셨군요")
+print('첫번째 숫자를 입력하세요:')
+num1 = int(input())
+print('두번째 숫자를 입력하세요:')
+num2 = int(input())
+print('연산기호를 입력하세요(+,-,*,/):')
+op = int(input())
+answer = 0
+if op == '+':
+    answer = num1 + num2
+elif op == '-':
+    answer = num1 - num2
+elif op == '*':
+    answer = num1 * num2
+elif op == '/':
+    answer = num1 / num2
 else:
-    print("인정하신거죠?")
+    print('잘못된 연산자입니다.')
+print('결과는', answer, '입니다.')
+print('계산기가 종료되었습니다.')
